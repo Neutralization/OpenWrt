@@ -16,3 +16,20 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
+# Add OpenClash
+mkdir package/luci-app-openclash
+cd package/luci-app-openclash
+git init
+git remote add origin https://github.com/vernesong/OpenClash.git
+git config core.sparsecheckout true
+echo "luci-app-openclash" >> .git/info/sparse-checkout
+git pull --depth 1 origin master
+
+# Add UnblockNeteaseMusic
+cd ..
+git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git
+sed -i s/libustream-openssl/libustream-wolfssl/g luci-app-unblockneteasemusic/Makefile
+
+# Add jd-dailybonus
+git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
