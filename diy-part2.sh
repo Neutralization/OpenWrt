@@ -19,7 +19,11 @@ uci -q batch << EOI
 set network.lan.ipaddr='192.168.2.1'
 set network.@device[2].macaddr='b8:27:eb:48:f8:30'
 set network.@device[2].ipv6='0'
+del network.wan6
 commit network
+set dhcp.lan.force='1'
+set dhcp.lan.ra_flags='none'
+commit dhcp
 set system.@system[0]=system
 set system.@system[0].hostname='CN210101841'
 set system.@system[0].timezone='CST-8'
