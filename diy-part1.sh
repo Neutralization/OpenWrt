@@ -32,4 +32,4 @@ git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.gi
 sed -i s/libustream-openssl/libustream-wolfssl/g luci-app-unblockneteasemusic/Makefile
 
 # Add jd-dailybonus
-git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
+# git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
