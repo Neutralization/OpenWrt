@@ -29,7 +29,7 @@ git pull --depth 1 origin master
 # Add UnblockNeteaseMusic
 cd ..
 git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git
-sed -i s/libustream-openssl/libustream-wolfssl/g luci-app-unblockneteasemusic/Makefile
+# sed -i s/libustream-openssl/libustream-wolfssl/g luci-app-unblockneteasemusic/Makefile
 
 # Add jd-dailybonus
 # git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
