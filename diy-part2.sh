@@ -23,6 +23,9 @@ del network.wan6
 commit network
 set dhcp.lan.force='1'
 set dhcp.lan.ra_flags='none'
+del dhcp.lan.ra
+del dhcp.lan.ra_slaac
+del dhcp.lan.dhcpv6
 commit dhcp
 set system.@system[0]=system
 set system.@system[0].hostname='CN210101841'
