@@ -31,6 +31,9 @@ cd ..
 git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git
 # sed -i s/libustream-openssl/libustream-wolfssl/g luci-app-unblockneteasemusic/Makefile
 
+# Add Zerotier
+git clone https://github.com/rufengsuixing/luci-app-zerotier.git
+
 # Add Adguard Home
 #git clone https://github.com/kongfl888/luci-app-adguardhome.git
 
