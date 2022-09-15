@@ -26,34 +26,5 @@ git config core.sparsecheckout true
 echo "luci-app-openclash" >>.git/info/sparse-checkout
 git pull --depth 1 origin master
 
-# Add UnblockNeteaseMusic
-# cd ..
-# git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git
-# sed -i s/libustream-openssl/libustream-wolfssl/g luci-app-unblockneteasemusic/Makefile
-
 # Add Zerotier
-# git clone https://github.com/rufengsuixing/luci-app-zerotier.git
-
-# Add Adguard Home
-# git clone https://github.com/kongfl888/luci-app-adguardhome.git
-
-# Add smartdns
-# cd ..
-# WORKINGDIR="$(pwd)/feeds/packages/net/smartdns"
-# mkdir $WORKINGDIR -p
-# rm $WORKINGDIR/* -fr
-# wget https://github.com/pymumu/openwrt-smartdns/archive/master.zip -O $WORKINGDIR/master.zip
-# unzip $WORKINGDIR/master.zip -d $WORKINGDIR
-# mv $WORKINGDIR/openwrt-smartdns-master/* $WORKINGDIR/
-# rmdir $WORKINGDIR/openwrt-smartdns-master
-# rm $WORKINGDIR/master.zip
-#
-# LUCIBRANCH="master" #更换此变量
-# WORKINGDIR="$(pwd)/feeds/luci/applications/luci-app-smartdns"
-# mkdir $WORKINGDIR -p
-# rm $WORKINGDIR/* -fr
-# wget https://github.com/pymumu/luci-app-smartdns/archive/${LUCIBRANCH}.zip -O $WORKINGDIR/${LUCIBRANCH}.zip
-# unzip $WORKINGDIR/${LUCIBRANCH}.zip -d $WORKINGDIR
-# mv $WORKINGDIR/luci-app-smartdns-${LUCIBRANCH}/* $WORKINGDIR/
-# rmdir $WORKINGDIR/luci-app-smartdns-${LUCIBRANCH}
-# rm $WORKINGDIR/${LUCIBRANCH}.zip
+git clone https://github.com/rufengsuixing/luci-app-zerotier.git
